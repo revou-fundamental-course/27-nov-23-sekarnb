@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segitiga</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h2>Kalkulator Matematik Segitiga</h2>
+        <h3>Let's try!</h3>
+        <div class="luas">
+            <h4>Luas Segitiga</h4>
+        </div>
+        <div class="img">
+            <img src="img/segitiga.png" alt="">
+        </div>
+        <h4>Rumus Luas Segitiga :</h4>
+        <h3>L = 1/2 x a x t</h3>
+        <div class="text">
+            <p>
+                Keterangan :
+            </p>
+            <p>
+                L = Luas
+            </p>
+            <p>
+                a = Panjang Alas
+            </p>
+            <p>
+                t = Tinggi
+            </p>
+        </div>
+        <div class="hitung">
+            <h2>
+                Hitung Luas Segitiga
+            </h2>
+        </div>
+        <section class="input-luas">
+            <label for="input-alas" id="label-alas">Alas</label>
+            <input type="number" id="input-alas" class="calc-input">
+            <p></p>
+            <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+            <input type="number" id="input-tinggi" class="calc-input">
+        </section>
+        <div class="button">
+            <button type="button" onclick="hitungLuas()">Hitung</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </div>
+
+        <div id="hasilLuas"></div>
+        <hr>
+        <div class="keliling">
+            <h4>Keliling Segitiga</h4>
+        </div>
+        <h4>Rumus Keliling Segitiga :</h4>
+        <h3>K = S1 + S2 + S3</h3>
+        <div class="text">
+            <p>
+                Keterangan :
+            </p>
+            <p>
+                K = Keliling
+            </p>
+            <p>
+                S1 = Sisi A
+            </p>
+            <p>
+                S2 = Sisi B
+            </p>
+            <p>
+                S3 = Sisi C
+            </p>
+        </div>
+        <div class="hitung">
+            <h2>
+                Hitung Keliling Segitiga
+            </h2>
+        </div>
+        <div class="img">
+            <img src="img/segitiga.png" alt="">
+        </div>
+        <section class="input-keliling">
+            <label for="input-s1" id="label-s1">Sisi A</label>
+            <input type="number" id="input-s1" class="calc-input">
+            <p></p>
+            <label for="input-s2" id="label-s2">Sisi B</label>
+            <input type="number" id="input-s2" class="calc-input">
+            <p></p>
+            <label for="input-s3" id="label-s3">Sisi C</label>
+            <input type="number" id="input-s3" class="calc-input">
+        </section>
+        <div class="button">
+            <button type="button" onclick="hitungKeliling()">Hitung</button>
+            <button type="button" onclick="resetForm2()">Reset</button>
+        </div>
+        <p id="hasilKeliling"></p>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
